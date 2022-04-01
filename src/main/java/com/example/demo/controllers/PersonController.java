@@ -1,4 +1,4 @@
-package com.example.demo.controller;
+package com.example.demo.controllers;
 
 import com.example.demo.model.Person;
 import com.example.demo.exeptions.ResourceNotFoundExeption;
@@ -45,8 +45,8 @@ public class PersonController
 
         double assetPerCity = restService.getAsset(city);
 
-        Double fortuneCurrent = cash + numberOfAssets * assetPerCity;
-        Double fortune=restService.getWealthThreshold();
+        double fortuneCurrent = cash + numberOfAssets * assetPerCity;
+        double fortune=restService.getWealthThreshold();
         if(fortuneCurrent>fortune)
         {
             Person client = new Person(tempClient.getId(),tempClient.getPersonalInfo().getFirstName(),tempClient.getPersonalInfo().getLastname(),fortuneCurrent);

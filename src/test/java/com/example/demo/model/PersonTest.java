@@ -1,4 +1,4 @@
-package com.example.demo;
+package com.example.demo.model;
 
 import com.example.demo.model.Person;
 import org.junit.jupiter.api.Test;
@@ -24,8 +24,8 @@ public class PersonTest
     @Test
     public void testCreateClientParam()
     {
-        Person c = new Person(123l,"firstname","lastname",11111);
-        assertEquals(123l, (long)c.getId());
+        Person c = new Person(123,"firstname","lastname",11111);
+        assertEquals(123, (long)c.getId());
         assertEquals("firstname", c.getFirstName());
         assertEquals("lastname", c.getLastName());
         assertEquals(11111, c.getFortune());
@@ -53,21 +53,21 @@ public class PersonTest
     {
         Person c = new Person();
         c.setFortune(11111.0);
-        assertEquals("value", c.getFortune());
+        assertEquals(11111.0, c.getFortune());
     }
 
     @Test
     public void testSetInn()
     {
         Person c = new Person();
-        c.setId(1234567890l);
-        assertEquals(1234567890l, (long) c.getId());
+        c.setId(1234567890L);
+        assertEquals(1234567890, (long) c.getId());
     }
 
     @Test
     public void testIsMandatorySet()
     {
-        Person c = new Person(1234l, "Fred", "Lucky", 11111);
+        Person c = new Person(1234, "Fred", "Lucky", 11111);
         assertTrue(c.isMandatorySet());
     }
 

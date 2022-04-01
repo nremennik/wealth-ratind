@@ -1,6 +1,6 @@
 package com.example.demo;
 
-import com.example.demo.controller.PersonController;
+import com.example.demo.controllers.PersonController;
 import org.assertj.core.api.Assertions;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
