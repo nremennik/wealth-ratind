@@ -1,6 +1,9 @@
 package com.example.demo.person;
 
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
+import org.springframework.beans.factory.annotation.Configurable;
+
+import javax.persistence.Entity;
 
 @JsonIgnoreProperties(ignoreUnknown = true)
 public class FinancialInfo

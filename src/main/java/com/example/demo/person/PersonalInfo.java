@@ -1,13 +1,16 @@
 package com.example.demo.person;
 
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
+import org.springframework.beans.factory.annotation.Configurable;
+
+import javax.persistence.Entity;
 
 @JsonIgnoreProperties(ignoreUnknown = true)
 public class PersonalInfo
 {
 
     private String firstName;
-    private String lastname;
+    private String lastName;
     private String city;
 
     public String getFirstName()
@@ -20,14 +23,14 @@ public class PersonalInfo
         this.firstName = firstName;
     }
 
-    public String getLastname()
+    public String getLastName()
     {
-        return lastname;
+        return lastName;
     }
 
-    public void setLastname(String lastname)
+    public void setLastName(String lastname)
     {
-        this.lastname = lastname;
+        this.lastName = lastname;
     }
 
     public String getCity()

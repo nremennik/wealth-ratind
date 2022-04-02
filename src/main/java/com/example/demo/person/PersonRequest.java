@@ -43,7 +43,7 @@ public class PersonRequest
         return "personalInfo{" +
                 "id=" + id +
                 ", firstName='" + personalInfo.getFirstName() + '\'' +
-                ", lastname='" + personalInfo.getLastname() +
+                ", lastname='" + personalInfo.getLastName() +
                 ", city='" + personalInfo.getCity() +
 
                 '}'+"financialInfo{" +
