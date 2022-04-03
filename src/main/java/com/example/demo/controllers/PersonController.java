@@ -39,7 +39,6 @@ public class PersonController
     @PostMapping(value = "/person", consumes = "application/json", produces = "application/json")
     public Person checkUser(@RequestBody PersonRequest tempClient)
     {
-        System.out.println(tempClient.getId() + " " + tempClient.getPersonalInfo());
         String city = tempClient.getPersonalInfo().getCity();
         double cash = tempClient.getFinancialInfo().getCash();
         double numberOfAssets = tempClient.getFinancialInfo().getNumberOfAssets();
